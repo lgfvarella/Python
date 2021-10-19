@@ -1,0 +1,7 @@
+nome=input('Qual é o seu nome? ')
+print('Seja bem vindo(a)',nome, 'prazer em te conhecer!')
+print('por favor! me informe sua data de nascimento')
+dia=input('coloque o dia: ')
+mes=input('agora o mês: ')
+ano=input('agora o ano: ')
+print('Você nasceu no dia',dia,'de',mes,'de',ano,'. Correto?')
