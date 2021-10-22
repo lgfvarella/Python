@@ -66,14 +66,14 @@ print ('Ex18: {}'.format(frase2.strip()))
 # Ex19: Faz com que os espaços existentes no final da string sejam removidos.
 print ('Ex19: {}'.format(frase2.rstrip()))
 
-# Ex20: Faz com que os espaços existentes no final da string sejam removidos.
+# Ex20: Faz com que os espaços existentes no inicio da string sejam removidos.
 print ('Ex20: {}'.format(frase2.lstrip()))
 
 # Ex21: Faz com que a string se torne uma lista, dividindo a string em cada espaço existente nela. 
 # Obs: professor comeca a explicar aos 28min do video
 print ('Ex21: {}'.format(frase.split()))
 
-list ['Banana','Abacaxi','Morango']
+list = ['Banana','Abacaxi','Morango']
 
 #Ex22: Junta elementos de uma lista formando uma string
-print ('Ex22: {}'.format(list'-'.join()))
+print ('Ex22: {}'.format('-'.join(list)))
