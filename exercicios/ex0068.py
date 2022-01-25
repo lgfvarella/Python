@@ -3,7 +3,7 @@
 from random import randint
 contador = 0
 print('-'*30)
-print('Sou seu computador!! Vamos jogar PAR ou IMPAR!!')
+print('Olá!! Sou seu computador!! Vamos jogar PAR ou IMPAR!!')
 print('-'*30)
 while True:
     numero_jogador = int(input('Escolha um número: '))
