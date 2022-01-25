@@ -8,7 +8,9 @@ print('-'*30)
 while True:
     numero_jogador = int(input('Escolha um número: '))
     numero_pc = (randint(0,10))
-    escolha_jogador =(str(input('Você quer par ou impar? [P/I]'))).upper() .strip() [0]
+    escolha_jogador = ' '
+    while escolha_jogador not in 'PpIi':
+        escolha_jogador =(str(input('Você quer par ou impar? [P/I]'))).upper() .strip() [0]
     soma = numero_jogador + numero_pc
     if soma % 2 == 0:
         resultado = 'Par'
@@ -16,10 +18,10 @@ while True:
         resultado = 'Impar'
     if resultado [0] == escolha_jogador:
         contador +=1 
-        print(f'A soma entre os numeros escolhidos foi {soma}. Esse é um número {resultado}')
+        print(f'Você jogou {numero_jogador} e o computador jogou {numero_pc}. O total é {soma}. Esse é um número {resultado}')
         print(f'Você ganhou!!')
     else:
-        print(f'A soma entre os numeros escolhidos foi {soma}. Esse é um número {resultado}')
+        print(f'Você jogou {numero_jogador} e o computador jogou {numero_pc} O total foi{soma}. Esse é um número {resultado}')
         print(f'Você perdeu após {contador} vitórias consecutivas!!')
         break
 print('FIM')
