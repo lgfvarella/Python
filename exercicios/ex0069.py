@@ -3,27 +3,25 @@
 # B) quantos homens foram cadastrados.
 # C) quantas mulheres tem menos de 20 anos.
 
+
 print('-'*30)
-idade = -1
-contador_maior_de_idade = 0
-contador_mulheres_de_menor = 0
-contador_homens = 0
-sexo = ' '
+de_maior = novinhas = homens = 0
 while True:
-    while idade not in range(0,200):
-        idade = int(input('Digite sua Idade: '))
-        if idade > 18:
-            contador_maior_de_idade += 1
-        while sexo not in ('MmFf'):
-            sexo = str(input('Digite seu sexo [M/F]: ')).strip() .upper() [0]    
-            if idade < 20 and sexo == 'F':
-                contador_mulheres_de_menor += 1
-            if sexo == 'M':
-                contador_homens += 1
-        encerrar = str(input('Deseja encerrar o programa? [Y/N]')).strip() .upper() [0]
-        if encerrar == 'Y':
-                break
-print(f'Temos {contador_maior_de_idade} pessoas maiores de 18 anos \nTemos {contador_homens} pessoas do sexo masculino e temos {contador_mulheres_de_menor} mulheres com menos de 20 anos')
-print('FIM')
-        
-    
+    idade = 0
+    while idade not in range(1,200):
+        idade = int(input('Digite sua idade: '))
+    if idade > 18:
+        de_maior += 1
+    sexo = str(input('Qual o seu sexo? [M/F]: ')).strip() .upper() [0]
+    if sexo == 'F' and idade < 20:
+        novinhas += 1
+    if sexo == 'M':
+        homens += 1
+    encerrar = str(input('Deseja encerrar o programa? [Y/N]')).strip() .upper() [0]
+    if encerrar == 'Y':
+        break
+print (f'Temos {de_maior} pessoas com mais de 18 anos.')
+print (f'Temos {novinhas} mulheres com menos de 20 anos.')
+print (f'{homens} homens foram cadastrados')
+print ('FIM')
+print ('-'*30)
